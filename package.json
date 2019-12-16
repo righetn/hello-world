@@ -17,7 +17,5 @@
     "url": "https://github.com/fhinkel/nodejs-hello-world/issues"
   },
   "homepage": "https://github.com/fhinkel/nodejs-hello-world#readme",
-  "dependencies": {
-    "pm2": "^4.2.0"
-  }
+  "dependencies": {}
 }

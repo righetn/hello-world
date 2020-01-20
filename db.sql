@@ -12,7 +12,7 @@ $$
 $$
 LANGUAGE SQL;
 
-CREATE FUNCTION getUsers(OUT name varchar(40)) returns varchar as 
+CREATE FUNCTION getUsers(OUT name varchar(40)) returns setof varchar(40) as 
 $$
     SELECT name FROM "user";
 $$

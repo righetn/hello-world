@@ -1,3 +1,4 @@
+ALTER USER postgres PASSWORD '123';
 CREATE DATABASE "mydb";
 \c "mydb";
 CREATE TABLE "user" (

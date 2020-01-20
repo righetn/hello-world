@@ -1,10 +1,12 @@
+const config = require('../config.json');
+
 const Pool = require('pg').Pool;
 const postgres_config = {
-    user: '',
-    password: '',
-    host: '',
+    user: 'postgres',
+    password: '123',
+    host: `${config.PGHOST}`,
     port: 5432,
-    database: '',
+    database: 'mydb',
     ssl: true
 }
 const pool = new Pool(postgres_config);

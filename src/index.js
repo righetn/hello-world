@@ -14,14 +14,11 @@ const pool = new Pool(postgres_config);
 let userNames = [];
 //${[...Array(10)].map(i => (~~(Math.random() * 36)).toString(36)).join('')}
 setInterval(() => {
-    pool.query(`SELECT * FROM postUser('Paul Ochon')`,
+    pool.query(`SELECT * FROM postUser('${[...Array(10)].map(i => (~~(Math.random() * 36)).toString(36)).join('')}')`,
         (error, results) => {
             if (error) {
-                console.log("caca")
                 console.log(error);
             }
-            else
-                console.log(results);
         }
     );
 }, 1300);
@@ -31,7 +28,6 @@ setInterval(() => {
             if (error) {
                 console.log(error);
             } else {
-                console.log(results.rows[0].name);
                 userNames = results.rows;
             }
         }

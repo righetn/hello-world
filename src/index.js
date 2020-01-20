@@ -7,7 +7,7 @@ const postgres_config = {
     host: `${config.PGHOST}`,
     port: 5432,
     database: 'mydb',
-    ssl: true
+    ssl: false
 }
 const pool = new Pool(postgres_config);
 let userNames = [];
